@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
+	<title>WebDemo0</title>
 	<link rel="stylesheet" href="css/style.css">
+
+		<script
+			id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m, sap.ui.layout"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.myFiori": "./"
+			}' >
+		</script>
+
+		<script>
+			new sap.m.Shell({     
+					app : new sap.ui.core.ComponentContainer({      
+						name : "sap.ui.demo.myFiori"     
+					})    
+			}).placeAt("content"); 
+		</script>
+
 </head>
 
 <body>
-	<section class="webdesigntuts-workshop">
+	<section class="webdesigntuts-workshop" id="content">
 		<form action="button1funct" method="get">		    
 			<input type="search" placeholder="What are you looking for?">		    		
 			<button>Search</button>			

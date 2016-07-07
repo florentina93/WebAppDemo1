@@ -14,4 +14,5 @@
   	<servlet-name>wApp</servlet-name>
   	<url-pattern>/button1funct</url-pattern>
   </servlet-mapping>
+
 </web-app>

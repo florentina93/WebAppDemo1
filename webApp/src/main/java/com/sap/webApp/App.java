@@ -17,7 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/wApp")
 public class App extends HttpServlet
 {
-    @Override
+
+	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     	// TODO Auto-generated method stub
     	PrintWriter out = resp.getWriter();
